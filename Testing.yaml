@@ -1,0 +1,11 @@
+---
+ - name: this is the project name
+   hosts: allprojects
+   become: true 
+   tasks:
+    - name: Install Docker on all projects
+      apt:
+        name: docker.io
+        state: present
+
+    
